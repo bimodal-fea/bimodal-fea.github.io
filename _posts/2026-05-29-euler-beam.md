@@ -9,6 +9,11 @@ tags: [Beam, ]
 author: Biman Mondal
 ---
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://jsdelivr.net">
+</script>
+</script>
+
 ### Introduction
 One of the fundamental skills in structural analysis is to understand beam deflection and force distribution with shear-moment diagrams. Whenever there is a take home question in an interview to demonstrate knowledge, over 50% of the time for me it has been a beam question.
 
@@ -22,17 +27,17 @@ Where I is the moment of inertia, E is the Young's modulus, w(x) is the deflecti
 
 The bending moment of the beam is given by
 
-** Bending Moment**
+**Bending Moment**
 
-$$ M(x) = -(EI\frac{d^2w}{dx^2}) $$
+\begin{align} $$ M(x) = -(EI\frac{d^2w}{dx^2}) $$ \end{align}
+
+
 
 **Beam Stress**
 
 $$ \sigma = -\frac{My}{I}) $$
 
 **Shear Load**
-
-
 $$ V = -\frac{dM}{dx}) $$
 
 ### Deflection Of A Beam
