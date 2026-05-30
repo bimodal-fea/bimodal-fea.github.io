@@ -1,7 +1,11 @@
 ---
 layout: page
 title: About me
+<<<<<<< HEAD
 subtitle: What is my background?
+=======
+subtitle: What's my background?
+>>>>>>> 1af78ee9be4ae0a2d131d4dfafbe3040ab07d610
 ---
 
 Hi there, I'm Biman (*bīmān*).   
