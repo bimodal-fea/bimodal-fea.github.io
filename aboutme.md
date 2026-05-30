@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Who am I?
+subtitle: What's my background?
 ---
 
 Hi there, I'm Biman (*bīmān*).   
