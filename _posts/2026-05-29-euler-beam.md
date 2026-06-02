@@ -17,9 +17,11 @@ One of the fundamental skills in structural analysis is to understand beam defle
 Euler-Bernoulli equation describes the relationship between deflection and load distribution across the span of the beam.
 
 **Static Deflection**
+
 '''math
 \frac{d^2}{dx^2}(EI\frac{d^2w}{dx^2}) = q(x)
 '''
+<\break>
 Where I is the moment of inertia, E is the Young's modulus, w(x) is the deflection in the vertical direction as a function of the longitudinal direction of the beam.
 
 The bending moment of the beam is given by
