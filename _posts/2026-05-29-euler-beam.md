@@ -22,6 +22,8 @@ $$
 \frac{d^2}{dx^2}(EI\frac{d^2w}{dx^2}) = q(x)
 $$
 
+$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
+
 <\break>
 Where I is the moment of inertia, E is the Young's modulus, w(x) is the deflection in the vertical direction as a function of the longitudinal direction of the beam.
 
