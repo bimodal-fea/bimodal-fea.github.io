@@ -140,6 +140,26 @@
   max-width: 100%;
 }
 
+/* Centered list: use a wrapper <div class="center-list" markdown="1">.
+   The block is centered while the items stay left-aligned. */
+.center-list {
+  text-align: center;
+}
+
+.center-list > ul {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Same class applied straight to the <ul> with kramdown's {: .center-list} */
+ul.center-list {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
 @media (max-width: 575px) {
   .pf-card-body {
     padding: 1.1rem 1.15rem 1.25rem;

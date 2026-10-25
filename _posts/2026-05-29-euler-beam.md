@@ -48,11 +48,6 @@ $$ \sigma = -\frac{My}{I} $$
 
 $$ f = \frac{1}{2\pi}\sqrt{\frac{k}{m}} $$
 
-### Deflection Of A Beam
-
-
-### Hand Calculation
-
 
 ### Results from FEA
 
