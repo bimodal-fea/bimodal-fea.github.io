@@ -51,9 +51,9 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "biman.mondal@proton.mail"
-  github: "https://github.com/biman-zen"
+  github: "biman-zen"
   youtube: "@myytchannel"
-  hackerrank: "https://www.hackerrank.com/profile/biman_s_mondal"
+  hackerrank: "profile/biman_s_mondal"
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
@@ -154,8 +154,8 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -258,13 +258,11 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown
 kramdown:
+  input: GFM
   math_engine: mathjax
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-
-kramdown:
-  input: GFM
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -276,6 +274,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      mathjax: true # load MathJax on every project post
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
@@ -292,6 +291,10 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - aboutme.md.bak
+  - Appraisals
+  - beautiful-jekyll-theme.gemspec
+  - staticman.yml
 
 plugins:
   - jekyll-paginate
