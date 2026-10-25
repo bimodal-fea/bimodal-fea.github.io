@@ -2,7 +2,7 @@
 layout: post
 title: Analyzing Beams
 subtitle: Shear-Moment Diagrams
-description: Beam deflection, slope, shear, moment and bending stress derived from the Euler-Bernoulli equation — the foundation for the hand calculation and FEA comparison that follow.
+description: Beam deflection, slope, shear, moment and bending stress derived from the Euler-Bernoulli equation.
 cover-img: /assets/img/beam-deflection.svg
 thumbnail-img: # 
 share-img: #/assets/img/path.jpg

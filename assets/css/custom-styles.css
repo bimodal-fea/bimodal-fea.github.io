@@ -160,6 +160,13 @@ ul.center-list {
   text-align: left;
 }
 
+/* Centered table: <div class="center-table" markdown="1"> around a table */
+.center-table table {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
 @media (max-width: 575px) {
   .pf-card-body {
     padding: 1.1rem 1.15rem 1.25rem;

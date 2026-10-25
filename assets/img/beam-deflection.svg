@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Simply supported beam under a distributed load, with the undeformed axis and the deflected shape">
-  <rect width="1200" height="675" fill="#ffffff"/>
+  <rect width="1200" height="675" fill="#2e3238"/>
 
   <!-- distributed load -->
-  <g stroke="#8a97a1" stroke-width="3" fill="none" stroke-linecap="round">
+  <g stroke="#98a4ae" stroke-width="3" fill="none" stroke-linecap="round">
     <path d="M200 250 H1000"/>
     <line x1="200" y1="250" x2="200" y2="336" />
-    <polygon points="191,328 209,328 200,348" fill="#8a97a1" stroke="none" />
+    <polygon points="191,328 209,328 200,348" fill="#98a4ae" stroke="none" />
     <line x1="333" y1="250" x2="333" y2="336" />
-    <polygon points="324,328 342,328 333,348" fill="#8a97a1" stroke="none" />
+    <polygon points="324,328 342,328 333,348" fill="#98a4ae" stroke="none" />
     <line x1="466" y1="250" x2="466" y2="336" />
-    <polygon points="457,328 475,328 466,348" fill="#8a97a1" stroke="none" />
+    <polygon points="457,328 475,328 466,348" fill="#98a4ae" stroke="none" />
     <line x1="600" y1="250" x2="600" y2="336" />
-    <polygon points="591,328 609,328 600,348" fill="#8a97a1" stroke="none" />
+    <polygon points="591,328 609,328 600,348" fill="#98a4ae" stroke="none" />
     <line x1="733" y1="250" x2="733" y2="336" />
-    <polygon points="724,328 742,328 733,348" fill="#8a97a1" stroke="none" />
+    <polygon points="724,328 742,328 733,348" fill="#98a4ae" stroke="none" />
     <line x1="866" y1="250" x2="866" y2="336" />
-    <polygon points="857,328 875,328 866,348" fill="#8a97a1" stroke="none" />
+    <polygon points="857,328 875,328 866,348" fill="#98a4ae" stroke="none" />
     <line x1="1000" y1="250" x2="1000" y2="336" />
-    <polygon points="991,328 1009,328 1000,348" fill="#8a97a1" stroke="none" />
+    <polygon points="991,328 1009,328 1000,348" fill="#98a4ae" stroke="none" />
   </g>
-  <text x="150" y="243" font-family="Georgia, serif" font-style="italic" font-size="36" fill="#6b7a86">q</text>
+  <text x="150" y="243" font-family="Georgia, serif" font-style="italic" font-size="36" fill="#c6ced6">q</text>
 
   <!-- supports -->
-  <g stroke="#8a97a1" stroke-width="3" fill="#e8eef2">
+  <g stroke="#98a4ae" stroke-width="3" fill="#3c4249">
     <polygon points="82,420 138,420 110,362"/>
     <polygon points="1062,420 1118,420 1090,362"/>
     <line x1="70" y1="420" x2="150" y2="420" stroke-width="5"/>
@@ -30,14 +30,14 @@
   </g>
 
   <!-- undeformed axis -->
-  <line x1="110" y1="360" x2="1090" y2="360" stroke="#c2ccd3" stroke-width="3" stroke-dasharray="12 9"/>
+  <line x1="110" y1="360" x2="1090" y2="360" stroke="#5b646d" stroke-width="3" stroke-dasharray="12 9"/>
 
   <!-- deflected shape -->
-  <path d="M110 360 C 350 500, 850 500, 1090 360" fill="none" stroke="#008aff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M110 360 C 350 500, 850 500, 1090 360" fill="none" stroke="#4da3ff" stroke-width="6" stroke-linecap="round"/>
 
   <!-- legend -->
-  <line x1="150" y1="110" x2="230" y2="110" stroke="#c2ccd3" stroke-width="3" stroke-dasharray="12 9"/>
-  <text x="245" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#8a97a1">undeformed axis</text>
-  <line x1="150" y1="160" x2="230" y2="160" stroke="#008aff" stroke-width="6"/>
-  <text x="245" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#8a97a1">deflected shape</text>
+  <line x1="150" y1="110" x2="230" y2="110" stroke="#5b646d" stroke-width="3" stroke-dasharray="12 9"/>
+  <text x="245" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#c6ced6">undeformed axis</text>
+  <line x1="150" y1="160" x2="230" y2="160" stroke="#4da3ff" stroke-width="6"/>
+  <text x="245" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#c6ced6">deflected shape</text>
 </svg>

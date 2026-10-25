@@ -43,7 +43,7 @@ Static structural analysis is purely a function of the stiffness. However, the d
 
 $$m\ddot{u} + k u = 0 \tag{2}$$
 
-Equation 2 has a solution of the following form. For brevity we will skip the solution. 
+Equation 2 has a solution of the following form. For brevity we will skip the derivation of the solution. 
 
 $$u(t) = C_1 \sin(\omega t) + C_2 \cos(\omega t) \tag{3}$$
 
@@ -54,6 +54,27 @@ $$\omega_n = \sqrt{\frac{k}{m}} \tag{4}$$
 The angular natural frequency is converted to the linear frequency (usually just called frequency) using the relation below.
 
 $$ f = \frac{\omega_n}{2\pi} \tag{5}$$
+
+### Hand Calculation of Beam Natural Frequency
+
+For a uniform beam, the first bending natural frequency can be predicted with the following equation: 
+$$f_1 = \frac{\lambda_1^2}{2\pi L^2}\sqrt{\frac{EI}{\rho A}} \tag{6}$$
+
+The value of $\lambda$ is determined by the boundary conditions.
+
+<div class="center-table" markdown="1">
+
+| End Condition | $\lambda$ |
+| :---: | :---: |
+| Fixed-Free | 1.8751 |
+| Fixed-Fixed | 4.7300 |
+
+</div>
+
+### Modal Analysis in NASTRAN
+Modal analysis in NASTRAN is called SOL 103 or SEMODES. 
+
+
 
 ### Summary
 In summary, a static analysis depends only on stiffness, whereas the dynamic response adds mass and damping to the problem. The boundary conditions set which mode shapes are possible and at what frequencies they occur, and the lowest elastic mode — the first above the rigid body modes of an unconstrained structure — typically dominates the response to vibration.
