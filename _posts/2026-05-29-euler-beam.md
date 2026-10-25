@@ -18,30 +18,41 @@ author: Biman Mondal
 One of the fundamental skills in structural analysis is to understand beam deflection and force distribution with shear-moment diagrams. Whenever there is a take home question in an interview to demonstrate knowledge, over 50% of the time for me it has been a beam question.
 
 ### Fundamental Mechanics
-Euler-Bernoulli equation describes the relationship between deflection and load distribution across the span of the beam.
+Euler-Bernoulli equation describes the relationship between deflection and load distribution across the span of the beam. The fourth order differential equation gives the 
 
-**Static Deflection**
-$$ \frac{d^2}{dx^2}(EI\frac{d^2w}{dx^2}) = q(x)$$
+**Beam Static Deflection** </break>
 
-Where I is the moment of inertia, E is the Young's modulus, w(x) is the deflection in the vertical direction as a function of the longitudinal direction of the beam.
+$$\frac{d^2}{dx^2}(EI\frac{d^2w}{dx^2}) = q(x) $$
 
-The bending moment of the beam is given by
+Where I is the area moment of inertia, E represents the Young's modulus, w(x) deflection on the beam as a function of x along the length of the beam, and q(x) is the distributed load per unit length of the beam.
 
-**Bending Moment**
+The slope of the beam is defined by differentiating the deflection with respect to the length x.  
 
-\begin{align} $$ M(x) = -(EI\frac{d^2w}{dx^2}) $$ \end{align}
-
+$$ \theta = \frac{dw}{dx} $$
 
 
-**Beam Stress**
+**Beam Shear Load** </break>
+
+The shear load is the differential of the moment with respect to x.
+
+$$ V(x) = -\frac{dM}{dx} = -(EI\frac{d^3w}{dx^3})  $$
+
+**Beam Bending Moment** </break>
+
+The bending moment of the beam is given by the following:
+
+
+$$ M(x) = -(EI\frac{d^2w}{dx^2}) $$
+ 
+**Beam Bending Stress**</break>
+
+The normal stress in a beam is calculated the moment (M(x)), multiplied by the distance from the neutral axis (y) divided by I the area moment of intertia of the beam.
 
 $$ \sigma = -\frac{My}{I}) $$
 
-**Shear Load**
-$$ V = -\frac{dM}{dx}) $$
 
 ### Deflection Of A Beam
-The churn label is a column booleans that state whether a customer has churned. This is covered to the number of churned customers using the 'IF' condition and counting the "YES" values.
+
 
 
 ### Hand Calculation
@@ -51,4 +62,3 @@ The churn label is a column booleans that state whether a customer has churned. 
 
 
 ### Summary
-In summary, this analysis was an introductory demonstration of basic DAX , data analysis, and dashboard development in Power BI. The Databel customer churn dataset was interrogated to determine the causes for customer churn. Demographics, group plan, and account type all play a factor of why customers stop doing business. 
