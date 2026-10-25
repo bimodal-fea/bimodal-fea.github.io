@@ -2,8 +2,8 @@
 layout: post
 title: Modal Analysis
 subtitle: Structural Resonance of Structures
-description: Modes, frequency, MEMF
-cover-img: /assets/img/telecom.png
+description: How boundary conditions fix a structure's mode shapes and natural frequencies — from the equation of motion to the frequency relation f = ωn / 2π.
+cover-img: /assets/img/mode-shapes.svg
 thumbnail-img: # 
 share-img: #/assets/img/path.jpg
 tags: [Modes]
@@ -39,20 +39,21 @@ $$m\ddot{u} + c\dot{u} + ku = F(t) \tag{1}$$
 
 </div>
 
-Static structural analysis is purely a function of the stiffness. However, the dynamic behavior of a system is governed by mass, damping, and its stiffness. For an undamped system, it's free vibration would be characterized by the following equation: 
+Static structural analysis is purely a function of the stiffness. However, the dynamic behavior of a system is governed by mass, damping, and its stiffness. For an undamped system, its free vibration would be characterized by the following equation: 
 
 $$m\ddot{u} + k u = 0 \tag{2}$$
 
 Equation 2 has a solution of the following form. For brevity we will skip the solution. 
 
-$$x(t) = C_1 \sin(\omega t) + C_2 \cos(\omega t) \tag{3}$$
+$$u(t) = C_1 \sin(\omega t) + C_2 \cos(\omega t) \tag{3}$$
 
  $\omega_n$ is the angular natural frequency of the system and for a single degree of freedom (*sdof*) problem, this  is a function of the stiffness and mass as shown below in Equation 4. 
 
 $$\omega_n = \sqrt{\frac{k}{m}} \tag{4}$$
 
-The angular natural frequency can be converted to the linear frequency ( usually just called frequency) is $\omega_n$
+The angular natural frequency is converted to the linear frequency (usually just called frequency) using the relation below.
 
-
+$$ f = \frac{\omega_n}{2\pi} \tag{5}$$
 
 ### Summary
+In summary, a static analysis depends only on stiffness, whereas the dynamic response adds mass and damping to the problem. The boundary conditions set which mode shapes are possible and at what frequencies they occur, and the lowest elastic mode — the first above the rigid body modes of an unconstrained structure — typically dominates the response to vibration.
