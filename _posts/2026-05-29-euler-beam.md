@@ -9,10 +9,6 @@ tags: [Beam, ]
 author: Biman Mondal
 ---
 
-<script type="text/javascript" id="MathJax-script" async
-  src="https://jsdelivr.net">
-</script>
-</script>
 
 ### Introduction
 One of the fundamental skills in structural analysis is to understand beam deflection and force distribution with shear-moment diagrams. Whenever there is a take home question in an interview to demonstrate knowledge, over 50% of the time for me it has been a beam question.
@@ -23,6 +19,8 @@ Euler-Bernoulli equation describes the relationship between deflection and load 
 **Beam Static Deflection** </break>
 
 $$\frac{d^2}{dx^2}(EI\frac{d^2w}{dx^2}) = q(x) $$
+
+$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$
 
 Where I is the area moment of inertia, E represents the Young's modulus, w(x) deflection on the beam as a function of x along the length of the beam, and q(x) is the distributed load per unit length of the beam.
 
