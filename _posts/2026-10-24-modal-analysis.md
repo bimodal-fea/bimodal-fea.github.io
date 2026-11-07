@@ -62,7 +62,7 @@ $$f_1 = \frac{\lambda_1^2}{2\pi L^2}\sqrt{\frac{EI}{\rho A}} \tag{6}$$
 
 The value of $\lambda$ is determined by the boundary conditions.
 
-<div class="center-table" markdown="1">
+<div align="center" class="center-table" markdown="1">
 
 | End Condition | $\lambda$ |
 | :---: | :---: |
@@ -70,6 +70,7 @@ The value of $\lambda$ is determined by the boundary conditions.
 | Fixed-Fixed | 4.7300 |
 
 </div>
+
 
 ### Modal Analysis in NASTRAN
 Modal analysis in NASTRAN is called SOL 103 or SEMODES. 

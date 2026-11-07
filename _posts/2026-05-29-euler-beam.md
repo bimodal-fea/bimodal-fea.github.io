@@ -11,7 +11,7 @@ author: Biman Mondal
 ---
 
 ### Introduction
-One of the fundamental skills in structural analysis is to understand beam deflection and force distribution with shear-moment diagrams. Whenever there is a take home question in an interview to demonstrate knowledge, over 50% of the time for me it has been a beam question.
+One of the fundamental skills in structural analysis is to understand beam deflection and force distribution with shear-moment diagrams. Whenever there is a technical question in an interview to demonstrate knowledge, over 50% of the time for me it has been a beam question. There are countless sources of knowledge, both online and in print, which go deep into the subject of simple Euler-Bernoulli beams to Timoshenko Beam theory. 
 
 ### Fundamental Mechanics
 The Euler-Bernoulli equation describes the relationship between deflection and load distribution across the span of the beam. The fourth order differential equation gives the deflected shape of the beam under a distributed load q(x).

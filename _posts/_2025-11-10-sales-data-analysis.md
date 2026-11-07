@@ -19,7 +19,7 @@ The sales team at *Pens & Printers* want to know which sales approach drives
 	3. Was there a difference in the revenue over time for each method?
 	4. Based on the data, which method would recommend we continue to use? (some methods may take more time than the team so they may not be the best for us)
 	5. How should the business monitor what they want to achieve?
-    6. Estimate the initial values for the metric vased on the current data?
+    6. Estimate the initial values for the metric based on the current data?
 
 ### Data Cleaning  
 The Pandas library in Python was used to evaluate the dataset and *seaborn* package was used to create the plots. The dataframe contains 8 columns and 15000 rows. 
