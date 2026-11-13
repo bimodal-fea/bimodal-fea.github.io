@@ -72,10 +72,46 @@ The value of $\lambda$ is determined by the boundary conditions.
 </div>
 
 
-### Modal Analysis in NASTRAN
+### Modal Analysis of a Beam
 Modal analysis in NASTRAN is called SOL 103 or SEMODES. 
+Using EasyFEA, the same calculation is reproduced below.
 
 
+
+**Input Parameters**
+
+![beam input parameters]({{"/assets/post_figures/beam_modal_parameters.png" | relative_url }}){:style="width: 55%; height: auto; display: block; margin: 0 auto;"}
+
+**Mesh**
+
+The beam is discretised into 40 quadratic (`SEG2`) Euler–Bernoulli elements — 41 nodes and six degrees of freedom per node, three translations and three rotations, for 246 degrees of freedom in total. The cross-section is meshed separately because EasyFEA integrates the section properties from it: A = 625 mm², Iy = Iz = 32 552 mm⁴ and J = 65 104 mm⁴, giving a total mass of 4.91 kg.
+
+![beam mesh]({{"/assets/post_figures/beam_modal_mesh.png" | relative_url }}){:style="width: 90%; height: auto; display: block; margin: 0 auto;"}
+
+**Natural Frequencies**
+
+Because the cantilever is clamped, K is positive definite and the eigenproblem is solved in shift-invert mode around σ = 0. Every bending frequency appears twice: the square section bends identically about y and about z, so the modes come in degenerate pairs.
+
+![natural frequencies]({{"/assets/post_figures/beam_modal_frequencies.png" | relative_url }}){:style="width: 70%; height: auto; display: block; margin: 0 auto;"}
+
+| Mode pair | Frequency (Hz) | Ratio to f₁ | Shape |
+| :---: | ---: | :---: | :--- |
+| 1–2 | 20.89 | 1.00 | first bending (y and z planes) |
+| 3–4 | 130.9 | 6.27 | second bending, one node |
+| 5–6 | 366.5 | 17.55 | third bending, two nodes |
+| 7–8 | 718.3 | 34.39 | fourth bending, three nodes |
+
+**Mode Shapes**
+
+![beam mode shapes]({{"/assets/post_figures/beam_modal_mode_shapes.png" | relative_url }}){:style="width: 100%; height: auto; display: block; margin: 0 auto;"}
+
+**Results**
+
+The first mode lands at 20.89 Hz against 20.89 Hz from Equation 6 with λ = 1.8751, a relative error below 0.01 %. That is expected: a cubic Euler–Bernoulli element reproduces the static cubic deflection exactly and the consistent mass matrix converges quickly, so 10 elements already give the same frequency to four decimal places as 40.
+
+Two checks are worth remembering. First, the higher modes follow the theoretical cantilever sequence 1 : 6.27 : 17.55 : 34.4 — if a model fails to reproduce those ratios, the usual culprits are the boundary conditions or the section properties. Second, the boundary condition dominates: clamping both ends replaces λ = 1.8751 by 4.73, and since the frequency scales with λ², the first mode rises by (4.73 / 1.8751)² ≈ 6.4× to roughly 133 Hz for the same beam.
+
+Finally, Euler–Bernoulli ignores transverse shear, so it over-predicts the frequency of short, stubby members. That error becomes noticeable once the span-to-depth ratio falls below about 10; here it is 40, so the correction is negligible and a Timoshenko element would give the same answer to within rounding.
 
 ### Summary
 In summary, a static analysis depends only on stiffness, whereas the dynamic response adds mass and damping to the problem. The boundary conditions set which mode shapes are possible and at what frequencies they occur, and the lowest elastic mode — the first above the rigid body modes of an unconstrained structure — typically dominates the response to vibration.
